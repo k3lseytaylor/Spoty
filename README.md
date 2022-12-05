@@ -1,2 +1,2 @@
 # Spoty
- Basicl CLI control for spotify
+ Basic CLI controller for Spotify 
