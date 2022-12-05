@@ -1,10 +1,14 @@
 # Spoty 
- Basic CLI controller for Spotify 
+ #Basic CLI controller for Spotify 
+
+ ##Commands
 
   If spoty is runned with out an argument it will toggle Play/Pause
  
   Options:
-  -sp [song URI]      Play URI link song (This currently only work if Track ID is Passed)
+  -sp [song URI]      Play URI link song 
+  (This currently only work if Track ID is Passed)
+
   -t                  Quits/Activates Spotify.
   -n                  Changes to Next Song.
   -b                  Changes to Previous Song
@@ -18,3 +22,5 @@
   -v down             decreases volume by default 10
   -v down [number]    decrease volume by number inputed
   -m                  toggles mute/unmute"
+
+![Alt text](/demo/demo.gif?raw=true "demo")

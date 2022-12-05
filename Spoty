@@ -216,7 +216,7 @@ function spoty(){
         "-c")
             _current 
             output="$(spoty_command "get name of current track" )";
-            echo -ne "\e]1;Playing <<$output>>...\a";
+            echo -ne "\e]1;Playing <<$output>>...\a"; #update tab name
            
             # title="$(spoty_command "get name of current track" )"
             # echo $title                           
