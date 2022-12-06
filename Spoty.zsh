@@ -156,14 +156,21 @@ function spoty(){
         #pull songs from api 
         #	https://api.spotify.com/v1/tracks/{id} GET // gets track with track ID
     }
-#Opens Artwork in Chrome
+
+
+    
+#Opens Artwork or Song in defualt browser
     pull_art(){
         URL="$(spoty_command "get artwork url of current track")"
-        osascript -e"
-            tell application \"Google Chrome\"
-                open location \"${URL}\"
-            end tell"
+        osascript -e"open location \"${URL}\""
     }
+    
+    pull_song(){
+        URL="$(spoty_command "get id of current track")"
+        TRIM_URL=${URL##*:}
+        osascript -e"open location \"https://open.spotify.com/track/${TRIM_URL}\""
+    }
+
     
     case $1 in
         "-sp")
@@ -236,6 +243,9 @@ function spoty(){
             ;; 
         "-art")
             pull_art
+            ;;
+        "-song")
+            pull_song
             ;;
         *)
             echo -n "unknown command"

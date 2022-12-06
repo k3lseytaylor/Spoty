@@ -41,7 +41,7 @@ e.g. ```source ~/Desktop/spoty/Spoty.zsh ```
 | ```-c ``` | Shows Current Song Playing. |
 | ```-s ``` | Toggles shuffle on and off. |
 | ```-r ``` | Toggles repeat on and off. |
-| ``` -sp [song URI]```  | Play URI link song (Track ID) |
+| ``` -sp``` [song URI]  | Play URI link song (Track ID) |
 
 
  Controls Spotify Application Volume
@@ -59,4 +59,5 @@ Other Commands
 
 | Misc Commands  | Details |
 | :------------- | :-------------: |
-|`-art`| Opens the current song artwork in chrome|
+|`-art`| Opens the current song artwork link|
+|`-song`| Opens current song on spotify website|
