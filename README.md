@@ -10,7 +10,8 @@
  
  > <h4>Usage:</h4>
  
-add ```source ~/Path/to/Spoty.zsh``` to your  ```.zshrc``` file and should be able to start using it
+add ```source ~/Path/To/Spoty.zsh``` to your  ```.zshrc``` file and should be able to start using it
+e.g. ```source ~/Desktop/spoty/Spoty.zsh ```
  
  > <h4>Planned Feature:</h4>
  
@@ -21,35 +22,27 @@ add ```source ~/Path/to/Spoty.zsh``` to your  ```.zshrc``` file and should be ab
  
  > <h3>Commands</h3>
 
-  If spoty is runned with out an argument it will toggle Play/Pause or if the application is close it will open it 
+  If `spoty` is runned with out an argument it will toggle Play/Pause or if the application is close it will open it 
  
-  Options:
-  -sp [song URI]      Play URI link song 
-  (This currently only work if Track ID is Passed)
+  
+| Basic Play Command  | Details |
+| ------------- | :-------------: |
+| `spoty` | Must call the commands below with spoty in front e.g. ```spoty -n ```|
+| ``` -sp [song URI]```  | Play URI link song (Track ID) |
+| ```-t ```  | Quits/Activates Spotify.  |
+| ```-n ``` | Changes to Next Song. |
+| ```-b ``` | Changes to Previous Song |
+| ```-c ``` | Shows Current Song Playing. |
+| ```-s ``` | Toggles shuffle on and off. |
+| ```-r ``` | Toggles repeat on and off. |
 
-  -t                  Quits/Activates Spotify.
-  
-  -n                  Changes to Next Song.
-  
-  -b                  Changes to Previous Song
-  
-  -c                  Shows Current Song Playing.
-  
-  -s                  Toggles shuffle on and off
-  
-  -r                  Toggles repeat on and off
-  
-       
-  Volume Controls:
-  
-  -v up               incearse volume by default 10
-  
-  -v up [number]      increase volume by number inputed
-  
-  -v down             decreases volume by default 10
-  
-  -v down [number]    decrease volume by number inputed
-  
-  -m                  toggles mute/unmute"
-  
+
+| Volume Conmmands  | Details |
+| :------------- | :-------------: |
+|  `-v up`  | incearse volume by default 10  |
+|  `-v up`  [number]  | increase volume by number inputed  |
+|  `-v down` | decreases volume by default 10 |
+|  `-v down` [number] | decrease volume by number inputed |
+|  `-m` |  toggles mute/unmute |
+
 
