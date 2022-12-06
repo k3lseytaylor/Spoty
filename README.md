@@ -10,7 +10,7 @@
  
  > <h4>Usage:</h4>
  
-add ```source ~/Path/to/Spoty.zsh``` to your  ```.zshrc``file and should be able to start using it
+add ```source ~/Path/to/Spoty.zsh``` to your  ```.zshrc``` file and should be able to start using it
  
  > <h4>Planned Feature:</h4>
  
