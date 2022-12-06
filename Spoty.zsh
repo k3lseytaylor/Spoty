@@ -75,43 +75,43 @@ function spoty(){
         end tell"       
     }
 #Spotify Volume Controll
-        spoty_vol_ctrl(){ #sets Volume up on spotify by 10 if no input
-        RED='\033[0;31m'
-        default=10 #Change this value for Default increase 
-        vol="${2:-$default}"
-        dir=
-        num=
-        sign=
-        ntf=
-        case $1 in
-            "up")
-                dir=">"
-                num=90
-                sign='+'
-                moved="increased"
-                ;;
-            "down")
-                dir="<"
-                num=10
-                sign='-'
-                moved='decreased'
-                ;;
-            *)
-                echo -n "unknown command"
-                ;;
-        esac
-       # echo $vol $dir $num $sign
-        echo "${RED}Volume ${moved} by $vol "
-            osascript -e"
-            tell application \"Spotify\"
-                set currentvol to get sound volume
-                if currentvol $dir $num then 
-                    set sound volume to 100
-                else
-                    set sound volume to currentvol $sign $vol
-                end if
-            end tell"    
-    }
+    spoty_vol_ctrl(){ #sets Volume up on spotify by 10 if no input
+    RED='\033[0;31m'
+    default=10 #Change this value for Default increase 
+    vol="${2:-$default}"
+    dir=
+    num=
+    sign=
+    ntf=
+    case $1 in
+        "up")
+            dir=">"
+            num=90
+            sign='+'
+            moved="increased"
+            ;;
+        "down")
+            dir="<"
+            num=10
+            sign='-'
+            moved='decreased'
+            ;;
+        *)
+            echo -n "unknown command"
+            ;;
+    esac
+    # echo $vol $dir $num $sign
+    echo "${RED}Volume ${moved} by $vol "
+        osascript -e"
+        tell application \"Spotify\"
+            set currentvol to get sound volume
+            if currentvol $dir $num then 
+                set sound volume to 100
+            else
+                set sound volume to currentvol $sign $vol
+            end if
+        end tell"    
+}
 
 #Add Shuffle control - set shuffling to false
     spoty_shuffle(){
@@ -164,7 +164,7 @@ function spoty(){
             # else
                 #echo "\033[0;31m $2" just checking $2 arugument
                 
-                #spoty_command "play track \"$2\""
+                spoty_command "play track \"$2\""
                 #sleep 0.5s #need delay or it doesnt display correctly
                 _current
                echo "Feature under construction"
