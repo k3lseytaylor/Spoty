@@ -3,15 +3,19 @@
  
  ![Alt text](/demo/demo.gif?raw=true "demo")
  
- > <h4>be gentle</h4>
+ > <h4>Be Gentle</h4>
  
  This was originally built for personal use because i was getting tired of switching to the application mid coding session 
  and is sharing here because of intrest from friends code needs clean up be gentle 
+ 
+ 
  
  > <h4>Usage:</h4>
  
 add ```source ~/Path/To/Spoty.zsh``` to your  ```.zshrc``` file and should be able to start using it
 e.g. ```source ~/Desktop/spoty/Spoty.zsh ```
+
+
  
  > <h4>Planned Feature:</h4>
  
@@ -19,6 +23,9 @@ e.g. ```source ~/Desktop/spoty/Spoty.zsh ```
  another issue is that if i use the API friends and what not would have to go thru the whole proccess of setting up the API on their own machine
  
  * returns a artist top songs and lets u pick what to play (same issue as above would need to use API)
+
+
+
  
  > <h3>Commands</h3>
 
@@ -28,13 +35,13 @@ e.g. ```source ~/Desktop/spoty/Spoty.zsh ```
 | Basic Play Command  | Details |
 | ------------- | :-------------: |
 | `spoty` | Must call the commands below with spoty in front e.g. ```spoty -n ```|
-| ``` -sp [song URI]```  | Play URI link song (Track ID) |
 | ```-t ```  | Quits/Activates Spotify.  |
 | ```-n ``` | Changes to Next Song. |
 | ```-b ``` | Changes to Previous Song |
 | ```-c ``` | Shows Current Song Playing. |
 | ```-s ``` | Toggles shuffle on and off. |
 | ```-r ``` | Toggles repeat on and off. |
+| ``` -sp [song URI]```  | Play URI link song (Track ID) |
 
 
 | Volume Conmmands  | Details |
