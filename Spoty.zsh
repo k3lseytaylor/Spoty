@@ -56,7 +56,11 @@ function spoty(){
          osascript -e "tell application \"Spotify\"" -e "$1" -e"end tell"
     }
 
-    
+#OS Volume Controls
+
+    os_vol_ctrl(){
+
+    }
 #Mute
 #Need to add check value before muting saving that value 
 #when resuming resume to that value
@@ -152,9 +156,15 @@ function spoty(){
         #pull songs from api 
         #	https://api.spotify.com/v1/tracks/{id} GET // gets track with track ID
     }
-
-   
-
+#Opens Artwork in Chrome
+    pull_art(){
+        URL="$(spoty_command "get artwork url of current track")"
+        osascript -e"
+            tell application \"Google Chrome\"
+                open location \"${URL}\"
+            end tell"
+    }
+    
     case $1 in
         "-sp")
             echo $2
@@ -216,10 +226,7 @@ function spoty(){
         "-c")
             _current 
             output="$(spoty_command "get name of current track" )";
-            echo -ne "\e]1;Playing <<$output>>...\a"; #update tab name
-           
-            # title="$(spoty_command "get name of current track" )"
-            # echo $title                           
+            echo -ne "\e]1;Playing <<$output>>...\a"; #update Terminal tab name                            
             ;;
         "-v")
             spoty_vol_ctrl $2 $3
@@ -227,6 +234,9 @@ function spoty(){
         "-m")
             spoty_mute_toggle
             ;; 
+        "-art")
+            pull_art
+            ;;
         *)
             echo -n "unknown command"
             ;;

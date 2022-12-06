@@ -32,7 +32,7 @@ e.g. ```source ~/Desktop/spoty/Spoty.zsh ```
   If `spoty` is runned with out an argument it will toggle Play/Pause or if the application is close it will open it 
  
   
-| Basic Play Command  | Details |
+| Basic Play Commands  | Details |
 | ------------- | :-------------: |
 | `spoty` | Must call the commands below with spoty in front e.g. ```spoty -n ```|
 | ```-t ```  | Quits/Activates Spotify.  |
@@ -44,7 +44,10 @@ e.g. ```source ~/Desktop/spoty/Spoty.zsh ```
 | ``` -sp [song URI]```  | Play URI link song (Track ID) |
 
 
-| Volume Conmmands  | Details |
+ Controls Spotify Application Volume
+
+
+| Volume Commands  | Details |
 | :------------- | :-------------: |
 |  `-v up`  | incearse volume by default 10  |
 |  `-v up`  [number]  | increase volume by number inputed  |
@@ -52,4 +55,8 @@ e.g. ```source ~/Desktop/spoty/Spoty.zsh ```
 |  `-v down` [number] | decrease volume by number inputed |
 |  `-m` |  toggles mute/unmute |
 
+Other Commands 
 
+| Misc Commands  | Details |
+| :------------- | :-------------: |
+|`-art`| Opens the current song artwork in chrome|
