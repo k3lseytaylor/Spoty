@@ -1,5 +1,5 @@
 # Spoty 
- <h3>Basic Mac Terminal Spotify Controler</h3>
+ <h3>Basic Mac Terminal Spotify Controler zsh</h3>
  
  ![Alt text](/demo/demo.gif?raw=true "demo")
  
@@ -10,7 +10,7 @@
  
  > <h4>Usage:</h4>
  
- Currently this function is directly in my .zshrc file havent looked into how i would seprate this function from my zshrc file and have it load 
+add ```source ~/Path/to/Spoty.zsh``` to your  ```.zshrc``file and should be able to start using it
  
  > <h4>Planned Feature:</h4>
  
