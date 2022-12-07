@@ -23,7 +23,9 @@ e.g. ```source ~/Desktop/spoty/Spoty.zsh ```
  another issue is that if i use the API friends and what not would have to go thru the whole proccess of setting up the API on their own machine
  
  * returns a artist top songs and lets u pick what to play (same issue as above would need to use API)
-
+ 
+ * Update terminal tab with song title automaticly | cron job? while loop + sleep ? <br/>
+ currently it only updates when u call a basic play command
 
 
  
