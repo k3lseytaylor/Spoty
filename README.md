@@ -11,7 +11,7 @@
  
  
  > <h4>Usage:</h4>
- 
+download the script
 add ```source ~/Path/To/Spoty.zsh``` to your  ```.zshrc``` file and should be able to start using it <br />
 e.g. ```source ~/Desktop/spoty/Spoty.zsh ```
 
